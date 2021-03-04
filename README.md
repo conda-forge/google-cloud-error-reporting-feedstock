@@ -5,9 +5,13 @@ Home: https://github.com/googleapis/python-error-reporting
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/master/LICENSE.txt)
 
 Summary: Stackdriver Error Reporting API client library
+
+Development: https://github.com/googleapis/python-error-reporting
+
+Documentation: https://googleapis.dev/python/clouderrorreporting/latest/index.html
 
 The Stackdriver Error Reporting API counts, analyzes and aggregates the crashes in your running cloud services. A centralized error management interface displays the results with sorting and filtering capabilities. Opt-in to receive email and mobile alerts on new errors.
 See the [quick start guide](https://googleapis.dev/python/clouderrorreporting/latest/index.html#quick-start).
@@ -109,9 +113,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
