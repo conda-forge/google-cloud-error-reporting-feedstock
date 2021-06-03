@@ -1,6 +1,6 @@
 {% set name = "google-cloud-error-reporting" %}
-{% set version = "0.34.0" %}
-{% set sha256 = "34edd11601b17c87a89c2e1cefdc27d975e1e9243a88ba3c0c48bfe6a05c404f" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "353ffeda6b486843325e798cd5f597e24115f696f5f9a35ab3694da1b50f475e" %}
 
 package:
   name: {{ name|lower }}
@@ -17,11 +17,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip >=18.1
   run:
-    - python
-    - google-cloud-logging >=1.14.0,<2.0.0dev
+    - python >=3.6
+    - google-cloud-logging >=1.14.0,<2.5
+    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - proto-plus >=1.4.0
+    - packaging >=14.3
 
 test:
   imports:
