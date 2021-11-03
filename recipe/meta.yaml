@@ -1,6 +1,6 @@
 {% set name = "google-cloud-error-reporting" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "80ba7e2a65cdd3f5b92d4bd3cb49e8a7a8d04e1bdaf542bcee491a4464c8d166" %}
+{% set version = "1.4.1" %}
+{% set sha256 = "4a72a65586178daaacf6bbc4b718db0765b99a719fce88a95c2be4f82689b7c1" %}
 
 package:
   name: {{ name|lower }}
