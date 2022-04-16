@@ -5,7 +5,7 @@ Home: https://github.com/googleapis/python-error-reporting
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/main/LICENSE.txt)
 
 Summary: Stackdriver Error Reporting API client library
 
@@ -22,8 +22,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9596&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/google-cloud-error-reporting-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9596&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/google-cloud-error-reporting-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -46,16 +46,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `google-cloud-error-reporting` can be installed with:
+Once the `conda-forge` channel has been enabled, `google-cloud-error-reporting` can be installed with `conda`:
 
 ```
 conda install google-cloud-error-reporting
 ```
 
-It is possible to list all of the versions of `google-cloud-error-reporting` available on your platform with:
+or with `mamba`:
+
+```
+mamba install google-cloud-error-reporting
+```
+
+It is possible to list all of the versions of `google-cloud-error-reporting` available on your platform with `conda`:
 
 ```
 conda search google-cloud-error-reporting --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search google-cloud-error-reporting --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search google-cloud-error-reporting --channel conda-forge
+
+# List packages depending on `google-cloud-error-reporting`:
+mamba repoquery whoneeds google-cloud-error-reporting --channel conda-forge
+
+# List dependencies of `google-cloud-error-reporting`:
+mamba repoquery depends google-cloud-error-reporting --channel conda-forge
 ```
 
 
@@ -73,10 +98,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
