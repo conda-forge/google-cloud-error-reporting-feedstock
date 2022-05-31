@@ -1,35 +1,37 @@
 {% set name = "google-cloud-error-reporting" %}
 {% set version = "1.5.2" %}
-{% set sha256 = "c234543c1670c863fedb9dbcbd9ff1e04aa2670a87fbd66f2b9af1e084a49471" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-error-reporting-{{ version }}.tar.gz
+  sha256: c234543c1670c863fedb9dbcbd9ff1e04aa2670a87fbd66f2b9af1e084a49471
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
-    - pip >=18.1
+    - pip
   run:
     - python >=3.6
-    - google-cloud-logging >=1.14.0,<2.5
-    - google-api-core-grpc >=1.26.0,<2.0.0dev
-    - proto-plus >=1.4.0
-    - packaging >=14.3
+    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - google-cloud-logging >=1.14.0,<4.0.0dev
+    - proto-plus >=1.15.0
 
 test:
   imports:
     - google.cloud.client
     - google.cloud.error_reporting
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-error-reporting
