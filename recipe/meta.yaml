@@ -10,14 +10,9 @@ source:
   sha256: 6e223575b9fb9690f52941a4395e4d30b2656316537c7fb35ba8bae5f6c95a4a
 
 build:
-<<<<<<< HEAD
-=======
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
->>>>>>> 8bee069 (Update recipe with changes from grayskull)
   number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
