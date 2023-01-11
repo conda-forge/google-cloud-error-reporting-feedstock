@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/main/LICENSE.txt)
 
-Summary: Stackdriver Error Reporting API client library
+Summary: Google Cloud Error Reporting API client library
 
 Development: https://github.com/googleapis/python-error-reporting
 
