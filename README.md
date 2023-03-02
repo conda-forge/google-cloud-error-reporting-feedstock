@@ -1,11 +1,11 @@
-About google-cloud-error-reporting
-==================================
+About google-cloud-error-reporting-feedstock
+============================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/googleapis/python-error-reporting
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-error-reporting-feedstock/blob/main/LICENSE.txt)
 
 Summary: Google Cloud Error Reporting API client library
 
