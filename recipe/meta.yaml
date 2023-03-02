@@ -1,5 +1,5 @@
 {% set name = "google-cloud-error-reporting" %}
-{% set version = "1.8.2" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-error-reporting-{{ version }}.tar.gz
-  sha256: 6f09758162eec792c9319212fed2453211ecd4b71a0d509380dae47ba0128812
+  sha256: e54464f32672e65775ee9ed45dfe72fa47223366c7f0d9a012f2754aac1827da
 
 build:
   noarch: python
