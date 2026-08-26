@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-error-reporting
-  version: "1.16.0"
+  version: "1.16.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 8c528ce4f54d3f7982731a00b53a600efc2b8d6011f2a81b77fb53224b04ff38
+  sha256: fd1c33062df79c685f03ac9b82a18cf57a1cf64bf761cea5a742099656508608
 
 build:
   number: 0
